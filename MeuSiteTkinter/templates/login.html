@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste</title>
+    <link rel="shortcut icon" href="/icons/icone.ico" type="image/x-icon">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            width: 100vw;
+            margin: 0;
+            justify-content: center;
+            background-color: #70aac5;
+            font-family: sans-serif;
+        }
+
+        form {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid;
+            border-radius: 10px;
+            width: max-content;
+            height: 220px;
+            gap: 5px;
+            padding: 25px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .caixa_de_email,
+        .caixa_de_senha{
+            display: flex;
+            margin-bottom: .5px;
+            flex-direction: column;
+            align-items: start;
+            font-size: 12px;
+            border: none;
+        }
+
+        input[type="email"],
+        input[type="password"]{
+            padding: 10px;
+            border: .05px solid;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button {
+            padding: 11px 82px;
+            border-radius: 4px;
+            border: none;
+            background-color: #a9b7cc;
+            font-weight: bold;
+            transition: 0.2ms ease;
+        }
+
+        button:hover {
+            background-color: #53aeda;
+        }
+
+        button:active {
+            background-color: #1c4156;
+            transition: all;
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="POST">
+        <p style="font-size: 24px">Login de Usuário</p>
+        <div class="container">
+            <div class ="caixa_de_email">
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="caixa_de_senha">
+                <input type="password" name="senha" placeholder="Senha">
+            </div>
+            <div class="botao">
+                <button type="submit">
+                    Login
+                </button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                font-family: "Droid Sans",serif;
+                background-color: rgb(196, 196, 196);
+                gap: 70px;
+            }
+            header {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: max-content;
+                align-items: center;
+                box-shadow: 0px 1px;
+            }
+            nav {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+            .nav_bar_buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+                text-decoration: none;
+                background-color: #828282;
+                padding: 5px;
+                border-radius: 5px;
+                font-size: small;
+            }
+            main {
+                display: flex;
+                flex-direction: row;
+            }
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            aside {
+                display: flex;
+                align-items: center;
+
+            }
+            #comprar_button {
+                background-color: rgb(66, 66, 66);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 0;
+                border-radius: 7px;
+                color: rgb(255, 255, 255);
+                height: max-content;
+                max-width: 200px;
+            }
+            #comprar_button:active {
+                background-color: rgb(64, 64, 64);
+            }
+            #comprar_button:hover {
+                background-color: #535353;
+            }
+
+            #tenis_branco {
+                display: flex;
+                height: 300px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2><i class="material-icons">directions_run</i>Sorriso de Nike</h2>
+            <nav>
+                <a class="nav_bar_buttons" href="">Sobre</a>
+                <a class="nav_bar_buttons" href="">Contato</a>
+                <a class="nav_bar_buttons" href="">Seu Perfil</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Diga adeus ao desconforto: Conheça os tênis da Nike</h2>
+                <h3>Proporcionado para o seu estilo! Sorriso de nike chegou para revoluionar o hype!</h3>
+                <h3>Vai ficar de fora?</h3>
+                <button id="comprar_button">
+                    Garanta já o seu!<i class="material-icons">keyboard_arrow_right</i>
+                </button>
+            </section>
+            <aside>
+                <img id= "tenis_branco" src="../assets/img/nike-shoes600px.png" alt="tênis da nike">
+                <p>Diga adeus aos seus sapatos sujos e feios!</p>
+            </aside>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
